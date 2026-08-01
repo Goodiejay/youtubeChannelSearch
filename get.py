@@ -155,6 +155,7 @@ def main():
                 continue
             except requests.exceptions.HTTPError as e:
                 print(e)
+                continue
             except ValueError as v:
                 print(f"{v}")
                 continue
